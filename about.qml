@@ -31,7 +31,7 @@ ApplicationWindow
                 width: 100
                 height: 100
                 id:icon
-                source: "d:/new_qt/Tools/QtCreator/bin/build-final_ui-Desktop_Qt_5_10_1_MinGW_32bit-Release/release/icon.png"
+                source: "file:///d:/new_qt/Tools/QtCreator/bin/final_ui/icon.png"
             }
             Text {
                 id:title
@@ -39,8 +39,8 @@ ApplicationWindow
                 font.family: "Helvetica"
                 font.pointSize: 12
                 color: "black"
-                anchors.left:parent.right
-                //anchors.leftMargin: content.width/2 - icon.width - 40
+                anchors.left:icon.right
+                anchors.leftMargin: content.width/2 - icon.width - 40
 
             }
             Text {
@@ -49,8 +49,8 @@ ApplicationWindow
                 font.family: "Helvetica"
                 font.pointSize: 10
                 color: "black"
-                anchors.left:parent.right
-                //anchors.leftMargin: content.width/2 - icon.width - 80
+                anchors.left:icon.right
+                anchors.leftMargin: content.width/2 - icon.width - 80
                 anchors.top:title.bottom
                 anchors.topMargin: 10
             }
@@ -60,8 +60,8 @@ ApplicationWindow
                 font.family: "Helvetica"
                 font.pointSize: 10
                 color: "black"
-                anchors.left:parent.right
-               // anchors.leftMargin: content.width/2 - icon.width - 80
+                anchors.left:icon.right
+                anchors.leftMargin: content.width/2 - icon.width - 80
                 anchors.top:content1.bottom
             }
             Text {
@@ -70,8 +70,8 @@ ApplicationWindow
                 font.family: "Helvetica"
                 font.pointSize: 10
                 color: "black"
-                anchors.left:parent.right
-                //anchors.leftMargin: content.width/2 - icon.width - 80
+                anchors.left:icon.right
+                anchors.leftMargin: content.width/2 - icon.width - 80
                 anchors.top:content2.bottom
             }
             Text {
@@ -80,8 +80,8 @@ ApplicationWindow
                 font.family: "Helvetica"
                 font.pointSize: 10
                 color: "black"
-                anchors.left:parent.right
-                //anchors.leftMargin: content.width/2 - icon.width - 80
+                anchors.left:icon.right
+                anchors.leftMargin: content.width/2 - icon.width - 80
                 anchors.top:content3.bottom
             }
             Rectangle
