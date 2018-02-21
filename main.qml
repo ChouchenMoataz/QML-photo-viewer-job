@@ -39,7 +39,7 @@ ApplicationWindow {
                 anchors.leftMargin:20
                 font.pointSize: 9
                 onClicked: {
-                    var component = Qt.createComponent("ab.qml")
+                    var component = Qt.createComponent("about.qml")
                     var window    = component.createObject(rootwindow)
                     window.show()
                 }
